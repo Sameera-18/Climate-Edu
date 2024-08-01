@@ -578,6 +578,9 @@ text-align: justify;
     grid-template-columns: auto;
   }
   
+  .about2{
+    padding-block-start: 1rem;
+  }
   .about__img{
     width: 460px;
   }
