@@ -478,6 +478,9 @@ text-align: justify;
   .join__image{
     order: -1;
   }
+  section:nth-child(even) .about__image{
+    order:-1;
+  }
   .footer__content{
     grid-template-columns: repeat(2,max-content);
     justify-content: space-between;
