@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/stylecp.css">
+
+      <title>Global Warming</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+               Climate Edu
+            </a>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <img src="assets/img/cfpbg.jpg" alt="home image" class="home__bg">
+            <div class="home__shadow"></div>
+
+            <div class="home__container container grid">
+               
+               <section class="about section" id="about">
+                <div class="about__container container grid">
+                   <div class="about__data">
+                      <h2 class="section__title">
+                         Know Your <br>
+                         Carbon Footprint
+                      </h2>
+    
+                      <form  class="join__form">
+                        <input type="number" id="electricity" placeholder="Electricity Usage (kWh)" class="join__input">
+                        <input type="number" id="natural-gas" placeholder="Natural Gas Usage (therms):" class="join__input">
+                        <input type="number" id="miles-driven" placeholder="Miles Driven (car):" class="join__input">
+                        <input type="number" id="flights" placeholder="Flights (hours)" class="join__input">
+                        <button class="join__button button" type="button"    onclick="calculateFootprint()">
+                           Calculate your footprint <i class="ri-arrow-right-line"></i>
+                        </button>
+                     </form>
+                   </div>
+    
+                   <div class="about__image">
+                    <h2 class="section__title" id="result">
+                        Result will <br> appear here
+                     </h2>
+                   </div>
+                </div>
+             </section>
+            </div>
+         </section>
+         
+         
+            <!--==================== FOOTER ====================-->
+    
+
+      <!--========== SCROLL UP ==========-->
+      
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src=""></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>

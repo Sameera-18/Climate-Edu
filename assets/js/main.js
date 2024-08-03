@@ -68,3 +68,32 @@ const scrollActive = () =>{
 window.addEventListener('scroll', scrollActive)
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+
+/*=============== Foot print ===============*/
+function calculateFootprint() {
+    // Emission factors (kg CO2 per unit)
+    const emissionFactors = {
+        electricity: 0.233, // kg CO2 per kWh
+        naturalGas: 5.3, // kg CO2 per therm
+        car: 0.404, // kg CO2 per mile
+        flight: 90 // kg CO2 per hour
+    };
+
+    // Get user inputs
+    const electricityUsage = document.getElementById('electricity').value;
+    const naturalGasUsage = document.getElementById('natural-gas').value;
+    const milesDriven = document.getElementById('miles-driven').value;
+    const flightHours = document.getElementById('flights').value;
+
+    // Calculate carbon footprint
+    const electricityFootprint = electricityUsage * emissionFactors.electricity;
+    const naturalGasFootprint = naturalGasUsage * emissionFactors.naturalGas;
+    const carFootprint = milesDriven * emissionFactors.car;
+    const flightFootprint = flightHours * emissionFactors.flight;
+
+    // Total footprint
+    const totalFootprint = electricityFootprint + naturalGasFootprint + carFootprint + flightFootprint;
+
+    // Display result
+    document.getElementById('result').innerText = `Your total carbon footprint is ${totalFootprint.toFixed(2)} kg CO2 per year.`;
+}
